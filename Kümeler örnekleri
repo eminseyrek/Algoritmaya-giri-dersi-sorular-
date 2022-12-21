@@ -1,0 +1,54 @@
+#KÜMELERDE .add İŞLEMİ
+
+ten = set(range(10))
+lows = {0, 1, 2, 3, 4}
+odds = {1, 3, 5, 7, 9}
+lows.add(8)
+print(lows)
+{0, 1, 2, 3, 4, 8}
+
+#KÜMELERDE .difference İŞLEMİ
+
+lows.difference(odds)
+print(lows)
+{0, 2, 4}
+
+#KÜMELERDE .intersection İŞLEMİ
+
+lows.intersection(odds)
+print(lows)
+{1, 3, 9}
+
+#KÜMELERDE .issubet İŞLEMİ
+
+lows.issubset(ten)
+True
+
+#KÜMELERDE .issuperset İŞLEMİ
+
+lows.issuperset(odds)
+False
+
+#KÜMELERDE .remove İŞLEMİ
+
+lows.remove(0)
+print(lows)
+{1, 2, 3, 4, 9}
+
+#KÜMELERDE .symetric_difference İŞLEMİ
+
+lows.symmetric_difference(odds)
+print(lows)
+{2, 4, 5, 7}
+
+#KÜMELERDE .union İŞLEMİ
+
+lows.union(odds)
+print(lows)
+{1, 2, 3, 4, 5, 7, 9}
+
+#KÜMELERDE .clear İŞLEMİ
+
+lows.clear()
+print(lows)
+set()
